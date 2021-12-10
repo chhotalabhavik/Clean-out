@@ -1,0 +1,6 @@
+const USER_ACTION = {
+	USER_LOADING: "USER_LOADING",
+	SET_USER: "SET_USER",
+};
+
+export default USER_ACTION;

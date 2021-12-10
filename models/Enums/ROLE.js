@@ -1,0 +1,9 @@
+const ROLE = {
+	USER: "USER",
+	WORKER: "WORKER",
+	SHOPKEEPER: "SHOPKEEPER",
+	COADMIN: "COADMIN",
+	ADMIN: "ADMIN",
+};
+
+module.exports = ROLE;

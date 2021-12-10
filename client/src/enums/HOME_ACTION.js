@@ -1,0 +1,6 @@
+const HOME_ACTION = {
+	DATA_LOADING: "DATA_LOADING",
+	SET_DATA: "SET_DATA",
+};
+
+export default HOME_ACTION;

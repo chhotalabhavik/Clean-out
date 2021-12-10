@@ -1,0 +1,9 @@
+const ROLE = {
+	USER: "USER",
+	SHOPKEEPER: "SHOPKEEPER",
+	WORKER: "WORKER",
+	ADMIN: "ADMIN",
+	COADMIN: "COADMIN",
+};
+
+export default ROLE;

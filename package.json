@@ -1,0 +1,38 @@
+{
+	"name": "clean-out-again",
+	"version": "1.0.0",
+	"description": "Clean Out",
+	"main": "server.js",
+	"scripts": {
+		"start": "cross-env APP_ENV=production DATABASE=clean-out DB_SERVER=mongodb+srv://sentinel_lord:mongodb@cluster0.fltjs.mongodb.net/clean-out?retryWrites=true DATE_FORMAT=YYYY-MM-DD DEFAULT_RATING=2.5 SESSION_SECRET=clean-out-secret SESSION_EXPIRE=600000 LIMIT_RATING=10 LIMIT_SERVICES=10 LIMIT_ITEMS=10 LIMIT_WORKERS=10 LIMIT_ORDERS=10 LIMIT_ADMIN=12 ADMIN='userName: admin; phone: 1111111111; password: pass' ADMIN_ADDRESS='society: A-105, My society; area: My area; city: My city; state: My state; pincode: 111111' node server.js",
+		"dev": "concurrently \"npm run client\" \"npm run server\"",
+		"server": "cross-env APP_ENV=development nodemon --ignore test.js server.js",
+		"client": "npm start --prefix client"
+	},
+	"author": "Darshit Nasit",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"concurrently": "^6.0.0",
+		"cors": "^2.8.5",
+		"cron": "^1.8.2",
+		"cross-env": "^7.0.3",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"express-session": "^1.17.1",
+		"jsonwebtoken": "^8.5.1",
+		"moment": "^2.29.1",
+		"mongoose": "^5.12.2",
+		"morgan": "^1.10.0",
+		"multer": "^1.4.2",
+		"nodemailer": "^6.5.0",
+		"passport": "^0.4.1",
+		"passport-jwt": "^4.0.0",
+		"passport-local": "^1.0.0",
+		"sharp": "^0.27.2",
+		"uuid": "^8.3.2"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.7"
+	}
+}
